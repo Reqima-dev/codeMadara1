@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+
+    <!-- lien Favicon-->
+    <link rel="icon" href="image/Favicon.jpg" />
+
+    <!-- Lien du Css-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!--- LINK BOOSTRAP CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+      integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM"
+      crossorigin="anonymous"
+    />
+
+    <!--- BOxicons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--- MATERIAL CDN-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'"></script>
+
+    <title>GAME-PC - Service de téléchargement</title>
+  </head>
+  <body>
+    <section class="container-movies">
+      <aside>
+        <div class="top">          
+          <div class="logo">
+            <a href="index.html">
+              <img src="image/logo-head.png" alt="logo MadaraDonwload" />
+            </a>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="index.html" >
+            <span class="material-icons">home</span>
+            <h3>Acceuil</h3>
+          </a>
+          <a href="films.html" >
+            <span class="material-icons">live_tv</span>
+            <h3>Films</h3>
+          </a>
+
+          <a href="series.html">
+            <span class="material-icons">ondemand_video</span>
+            <h3>Séries</h3>
+          </a>
+
+          <a href="animation.html" >
+            <span class="material-icons">
+              pets
+            </span>
+            <h3>Dessin animé</h3>
+          </a>
+
+          <a href="manga.html" >
+            <span class="material-icons"> flutter_dash </span>
+            <h3>Mangas</h3>
+          </a>
+         
+          <a href="game-pc.html" class="active">
+            <span class="material-icons">videogame_asset</span>
+            <h3>Jeux PC</h3>
+          </a>
+          <a href="game-console.html">
+            <span class="material-icons">sports_esports</span>
+            <h3>Jeux Consoles</h3>
+          </a>
+          <a href="fichierPerso.html">
+            <span class="material-icons">perm_media</span>
+            <h3>Fichier Personnel</h3>
+          </a>
+        </div>
+      </aside>
+      <!---------------- END OF ASIDE ----------->
+      <section class="container-films">
+        <div class="entete-recherche">
+          <div class="desciption">
+            <h2>Service de Téléchargement</h2>
+          </div>
+
+          <form>
+            <input
+              type="text"
+              name="torrentSearch"
+              placeholder="Recherche..."
+              value=""
+              maxlength="49"
+              required
+            />
+            <button type="submit">
+              <i class="bx bx-search"></i>
+            </button>
+          </form>
+
+          <div class="reseaux_socials">
+            <a href="https://www.facebook.com/madaradownload" target="blank"
+              ><i class="bx bxl-facebook-circle"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UC9A5oH68k_vqEFV0DSrIB9w"
+              target="blank"
+              ><i class="bx bxl-youtube"></i
+            ></a>
+            <a href="https://t.me/madaraDownload" target="blank"
+              ><i class="bx bxl-telegram"></i
+            ></a>
+            <a href="https://wa.me/22990757450" target="blank"
+              ><i class="bx bxl-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="new-films">
+          <div class="tags-new-films">
+            <a href="#" class="defaut">New GAME-PC</a>
+            <a href="#" class="selector">Action</a>
+            <a href="#">Aventure</a>
+            <a href="#">Combat</a>
+            <a href="#">Course</a>
+            <a href="#">FPS</a>
+            <a href="#">Simulation</a>
+            <a href="#">Tir</a>
+            <a href="#">Sport</a>
+            <a href="#" class="defaut defaut-fin">Voir plus</a>
+          </div>
+
+          <div class="films-new">
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/1.jpg" />
+                <p class="film-name">Kicking Blood</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">2.1GB</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>French</small>
+                </div>
+
+                <img src="image/gamePC/2.jpg" />
+                <p class="film-name">Father of the Bride</p>
+              </div>
+
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">1.4GB</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VF+VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/assassin-s-creed-origins-gold-edition-pc.jpg" />
+                <p class="film-name">Virus :32</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">1.4GB</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VOSTENG</small>
+                </div>
+
+                <img src="image/gamePC/transport-fever-2-pc.jpg" />
+                <p class="film-name">Les Crimes du Futur</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">2.5gb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VOSTENG</small>
+                </div>
+
+                <img src="image/gamePC/4.jpg" />
+                <p class="film-name">Watcher</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">2.1GB</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <section class="new-films view-serie">
+          <div class="films-new">
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLights</small>
+                  <small>VOSTENG</small>
+                </div>
+
+                <img src="image/gamePC/5.jpg" />
+                <p class="film-name">The Lost Girls</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">2.0Gb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VOSTENG</small>
+                </div>
+
+                <img src="image/gamePC/6.jpg" />
+                <p class="film-name">Jerry & Marge Go Large</p>
+              </div>
+
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">1.5Gb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VOSTENG</small>
+                </div>
+
+                <img src="image/gamePC/7.jpg" />
+                <p class="film-name">Mad God</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">1.25Gb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VF+VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/8.jpg" />
+                <p class="film-name">Doula</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">2Gb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VF+VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/9.png" />
+                <p class="film-name">Le Joueur d'Échecs</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">2.0Gb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VF+VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/10.jpg" />
+                <p class="film-name">Post Mortem</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">1.80Gb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VF+VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/11.jpg" />
+                <p class="film-name">Good Luck to You, Leo Grande</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">2.4Gb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>CIN+VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/14.jpg" />
+                <p class="film-name">Jurassic World 3 : Le Monde d'Après</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">3.4Gb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VF+VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/15.jpg" />
+                <p class="film-name">The Medium</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">2.0Gb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VF+VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/16.jpg" />
+                <p class="film-name">Spiderhead</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">2.2Gb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>CIN+VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/17.jpg" />
+                <p class="film-name">Black Phone</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">50Gb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VF+VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/18.jpg" />
+                <p class="film-name">Le Cataclysme de l'Amour</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">700mb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VF+VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/19.jpg" />
+                <p class="film-name">Le Monde de John</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">965mb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VF+VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/3.jpg" />
+                <p class="film-name">Mid-Century</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">1.2GB</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VF+VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/4.jpg" />
+                <p class="film-name">Norbourg</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">1.5Gb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VF+VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/10.jpg" />
+                <p class="film-name">En plein choc</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">1.90Gb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VF+VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/5.jpg" />
+                <p class="film-name">Une Jeune Fille qui va Bien</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">805mb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VF+VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/16.jpg" />
+                <p class="film-name">Twist à Bamako</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">1.5Gb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VF+VOSTFR</small>
+                </div>
+
+                <img src="image/gamePC/2.jpg" />
+                <p class="film-name">Maigret</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">1.0GB</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+            <article class="films-temp">
+              <div class="film-info">
+                <div class="info-head">
+                  <small>HDLight</small>
+                  <small>VF+VOSTFR</small>
+                </div>
+
+                <img src="image/films/Cha Cha Real Smooth.jpg" />
+                <p class="film-name">Cha Cha Real Smooth</p>
+              </div>
+              <div class="buttons__play">
+                <a
+                  ><i class="bx bx-play-circle" onClick="toggleVideo();"></i
+                ></a>
+              </div>
+              <div class="button_poids_fichier">
+                <h3 class="poids_fichier">785mb</h3>
+                <a href="#">Commander</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <div class="popup-video trailer">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/yIcPJR4la_w"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <span class="close__popup" onClick="toggleVideo();">&times;</span>
+      </div>
+    </section>
+
+    <div class="pagi__nav">
+      <span class="navigation_pagi">
+        <span>1</span>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <a href="#">10</a>
+        <a href="#"><i class='bx bxs-chevrons-right'></i></a>
+      </span>
+    </div>
+
+
+
+
+
+
+
+
+    <!---Footer-->
+    <footer>
+      <p>© Madara Download 2022. | Reproduction interdite</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
