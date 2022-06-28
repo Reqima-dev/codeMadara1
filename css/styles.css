@@ -2208,7 +2208,7 @@ footer p {
     }
 
     .madara_info .container-left .info h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .madara_info .container-left .info p {
@@ -2418,9 +2418,7 @@ footer p {
         place-items: center;
     }
 
-    .social-menu {
-        
-    }
+    
 
     footer {
         padding-left: 3rem;
@@ -2431,13 +2429,47 @@ footer p {
     }
 
     .container-movies aside .top {
-        left: 64px;
+        left: 112px;
         top: -102px;
     }
 
     .container-films .entete-recherche {
         height: 12vh;
         width: 105vw;
+    }
+
+    .container_home .drag_menu span {
+        font-size: 2.5rem;
+    }
+
+    .container_home .drag_menu{
+        top: 38px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .container-movies aside .top {
+        left: 83px;
+    }
+
+    .madara_info .container-left .info h1 {
+        font-size: 3rem;
+    }
+    .container-left {
+        margin-left: -122px;
+    }
+
+    .madara_info .mode_painement h1 {
+        font-size: 1.5rem;
+    }
+
+    .plan-abonner .container-plan .plan-simple {
+        width: 84vw;
+        height: 75vh;
+    }
+    .recent_movies_home .plan-abonner {
+        height: 270vh;
     }
 
 }
