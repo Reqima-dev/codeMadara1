@@ -1213,6 +1213,7 @@ aside .movies .movies-image img {
     font-weight: 420;
     width: 430px;
     text-align: justify;
+    color: #393838;
 }
 
 .social-menu a {
@@ -2025,6 +2026,7 @@ footer p {
         padding: 5px;
         border-radius: 50%;
         transition: all 300ms ease;
+        cursor: pointer;
     }
 
     .container_home .drag_menu span:hover {
@@ -2035,12 +2037,379 @@ footer p {
         display: none;
     }
 
+
     .container-movies aside {
-       
+        background: transparent;
+        box-shadow: none;
     }
 
     .container-movies aside .sidebar {
-        width: 80px;
+        box-shadow: 0 2rem 2rem var(--color-texte-four);
+        background: var(--color-aside);
+        height: 100vh;
+        width: 0;
+        opacity: 0;
+        transition: all 400ms ease;
+
+    }
+
+    .madara_info .container-left .info p {
+        font-size: 1.5rem;
+    }
+
+    .plan-abonner .plan-simple .plan-mode {
+        width: 42%;
+    }
+
+    .recent_movies_home {
+        margin-left: -12rem;
+        gap: 5rem;
+    }
+
+    .recent_movies_home .recent_movies,
+    .new-movies-titlte {
+        width: 30vw;
+    }
+
+    .temoignes {
+        margin-left: -32px;
+    }
+
+    .contact {
+        margin-left: -196px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        /* align-items: center; */
+        /* width: 100%; */
+        width: 91vw;
+        /* place-items: center; */
+        place-items: flex-start;
+    }
+
+    .footer-container {
+        margin-left: 3rem;
+    }
+
+    .container-films .entete-recherche {
+        height: 10vh;
+    }
+}
+
+
+
+@media screen and (max-width: 940px) {
+
+    .recent_movies_home {
+        margin-left: -15rem;
+        grid-template-columns: 0 81vw;
+    }
+
+    .recent_movies_home .moviesRecent {
+        opacity: 0;
+    }
+
+    .madara_info .md-services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .madara_info .container-left .info p {
+        font-size: 2rem;
+    }
+
+    .madara_info .container-left .info h1 {
+        font-size: 3em;
+    }
+
+    .madara_info .special__promo .promo_corver img {
+        width: 40rem;
+    }
+
+    .madara_info .special__promo .promo_corver img:hover {
+        width: 45rem;
+    }
+
+    .recent_movies_home .recent_movies,
+    .new-movies-titlte {
+        width: 35vw;
+    }
+
+
+    .plan-abonner .container-plan {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        place-items: center;
+
+    }
+
+    .plan-abonner .container-plan .plan-simple {
+        height: 62vh;
+        width: 49vw;
+    }
+
+    .plan-abonner .plan-simple .plan-mode {
+        width: 51%;
+    }
+
+    .recent_movies_home .plan-abonner {
+        height: 215vh;
+        width: 97vw;
+    }
+
+    .container-films .entete-recherche .desciption {
+        display: none;
+    }
+
+    .container-films .entete-recherche form {
+        padding-left: 0;
+    }
+
+    .container-films .entete-recherche .reseaux_socials {
+        top: 40px;
+    }
+
+    .footer-logo p {
+        width: 400px;
+    }
+
+
+    .social-menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .recent_movies_home .plan-abonner {
+        margin-left: 0;
+        margin-top: -214px;
+    }
+
+    .container-films .entete-recherche {
+        height: 10vh;
+    }
+
+    .container-films .entete-recherche input {
+        width: 165px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 676px) {
+
+    .container-left {
+        margin-left: -55px;
+    }
+
+    .madara_info .md-services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .madara_info .container-left .info h1 {
+        font-size: 2.5rem;
+    }
+
+    .madara_info .container-left .info p {
+        font-size: 1.5rem;
+    }
+
+    .madara_info .special__promo .promo_corver img {
+        width: 30rem;
+    }
+
+    .madara_info .special__promo .promo_corver img:hover {
+        width: 35rem;
+    }
+
+    .madara_info .tarifsStandars {
+        margin-left: -55px;
+    }
+
+    .madara_info .mode_painement {
+        margin-left: -55px;
+    }
+
+    .recent_movies_home .plan-abonner .info-plan h2 {
+        font-size: 1.8rem;
+    }
+
+    .recent_movies_home .plan-abonner .info-plan p {
+        font-size: 1.5em;
+    }
+
+    .recent_movies_home .plan-abonner .info-plan {
+        width: 75vw;
+        margin-left: 45px;
+    }
+
+    .plan-abonner .container-plan .plan-simple {
+        width: 74vw;
+    }
+
+    .plan-abonner .plan-simple .plan-mode {
+        width: 77%;
+    }
+
+    .recent_movies_home .plan-abonner {
+        height: 225vh;
+    }
+
+    .contact {
+        flex-direction: column-reverse;
+        display: flex;
+        gap: 5rem;
+        margin-left: -220px;
+    }
+
+    .footer-container {
+        margin-left: 1rem;
+    }
+
+    .footer-logo p {
+        width: 297px;
+        font-size: 14px;
+        margin-right: 20px;
+    }
+}
+
+
+@media screen and (max-width: 492px) {
+    .container-films .entete-recherche form {
+        display: none;
+    }
+
+    .madara_info .md-services {
+        grid-template-columns: 1fr;
+        place-items: center;
+        gap: 2rem;
+    }
+
+    .container-left {
+        margin-left: -96px;
+    }
+
+    .madara_info .md-services .services {
+        max-width: 50%;
+    }
+
+    .madara_info .special__promo .promo_corver img {
+        width: 15rem;
+    }
+
+    .madara_info .special__promo .promo_corver img:hover {
+        width: 20rem;
+    }
+
+    .special__promo .promo_corver .bouton-promo {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .special__promo .promo_corver .bouton-promo .bouton-validate a {
+        padding: 0.4rem;
+    }
+
+    .special__promo .promo_corver .bouton-promo .boutton-share a {
+        padding: 0.4rem;
+    }
+
+    .madara_info .tarifsStandars .tarifs h1 {
+        font-size: 2.5rem;
+    }
+
+    .madara_info .tarifsStandars .tarifs p {
+        font-size: 1.5rem;
+    }
+
+    .madara_info .tarifsStandars {
+        margin-left: -86px;
+    }
+
+    .madara_info .container-left .info p {
+        font-size: 1em;
+    }
+
+
+    .recent_movies_home .plan-abonner {
+        margin-top: -38px;
+    }
+
+    .madara_info .mode_painement {
+        margin-left: -66px;
+        margin-right: 42px;
+    }
+
+    .info .paiement_types {
+        text-align: center;
+    }
+
+    .recent_movies_home .plan-abonner .info-plan {
+        margin-left: 0;
+        line-height: 2rem;
+    }
+
+    .plan-abonner .container-plan .plan-simple {
+        width: 84vw;
+        height: 75vh;
+    }
+
+    .plan-abonner .plan-simple .plan-info .info-two p {
+        font-size: 12px;
+    }
+
+    .plan-abonner .plan-simple .plan-mode {
+        width: 88%;
+    }
+
+    .recent_movies_home .plan-abonner {
+        height: 270vh;
+    }
+
+    .temoignes {
+        margin-left: -14px;
+    }
+
+    .contact {
+        gap: 10rem;
+        margin-left: -230px;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .footer-logo p {
+        font-size: 12px;
+    }
+
+    .footer-logo {
+        max-width: 100%;
+    }
+
+    .social-menu {
+        display: flex;
+        margin: 1rem;
+        gap: 0;
+    }
+
+    footer {
+        padding-left: 3rem;
+    }
+
+    .container-films .entete-recherche .reseaux_socials {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem;
+        top: -8px;
+        gap: 0.5rem;
     }
 
 }
