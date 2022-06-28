@@ -2107,6 +2107,7 @@ footer p {
 
     .recent_movies_home .moviesRecent {
         opacity: 0;
+        z-index: -111111;
     }
 
     .madara_info .md-services {
@@ -2294,11 +2295,11 @@ footer p {
     }
 
     .madara_info .special__promo .promo_corver img {
-        width: 15rem;
+        width: 80%;
     }
 
     .madara_info .special__promo .promo_corver img:hover {
-        width: 20rem;
+        width: 80%;
     }
 
     .special__promo .promo_corver .bouton-promo {
@@ -2316,7 +2317,7 @@ footer p {
     }
 
     .madara_info .tarifsStandars .tarifs h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .madara_info .tarifsStandars .tarifs p {
@@ -2329,6 +2330,10 @@ footer p {
 
     .madara_info .container-left .info p {
         font-size: 1em;
+    }
+
+    .madara_info .tarifsStandars .tarifs {
+        margin-right: 70px;
     }
 
 
@@ -2352,11 +2357,24 @@ footer p {
 
     .plan-abonner .container-plan .plan-simple {
         width: 84vw;
-        height: 75vh;
+        height: 80vh;
+    }
+
+    .plan-abonner .plan-simple .mode-conditions {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .plan-abonner .plan-simple .plan-mode h1 {
+        font-size: 1.5rem;
+    }
+
+    .plan-abonner .plan-simple .mode-conditions h4 {
+        font-size: 1rem;
     }
 
     .plan-abonner .plan-simple .plan-info .info-two p {
-        font-size: 12px;
+        display: none;
     }
 
     .plan-abonner .plan-simple .plan-mode {
@@ -2364,7 +2382,7 @@ footer p {
     }
 
     .recent_movies_home .plan-abonner {
-        height: 270vh;
+        height: 288vh;
     }
 
     .temoignes {
@@ -2388,16 +2406,20 @@ footer p {
 
     .footer-logo p {
         font-size: 12px;
+        width: 226px;
+        margin-right: 0;
     }
 
     .footer-logo {
         max-width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        place-items: center;
     }
 
     .social-menu {
-        display: flex;
-        margin: 1rem;
-        gap: 0;
+        
     }
 
     footer {
@@ -2405,11 +2427,17 @@ footer p {
     }
 
     .container-films .entete-recherche .reseaux_socials {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin: 1rem;
-        top: -8px;
-        gap: 0.5rem;
+        display: none;
+    }
+
+    .container-movies aside .top {
+        left: 64px;
+        top: -102px;
+    }
+
+    .container-films .entete-recherche {
+        height: 12vh;
+        width: 105vw;
     }
 
 }
