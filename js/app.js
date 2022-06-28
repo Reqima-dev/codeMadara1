@@ -1,16 +1,28 @@
 /*----------- Open and close Menu ------------------*/
-const menuMovies = document.querySelector('.aside_menu')
+const menuMovies = document.querySelector('.sidebar')
 const openMenu = document.querySelector('#openMenuAside')
 const closeMenu = document.querySelector('#closeMenuAside')
-const titleMovies = document.querySelector('.sidebar h3')
+const containersMovies= document.querySelector('.recent_movies_home')
+
 
 openMenu.addEventListener('click', () =>{
-    menuMovies.style.width = '80px';
-    titleMovies.style.display = 'none';
+    menuMovies.style.opacity = '1';
+    menuMovies.style.width = '100%';
+    closeMenu.style.display = 'block' ;
+    openMenu.style.display ='none';  
+    containersMovies.style.opacity = '0.4';
+
 })
 
+const closeNav=() =>{
+    menuMovies.style.opacity = '0';
+    menuMovies.style.width = '0';
+    closeMenu.style.display = 'none';
+    openMenu.style.display ='block';
+    containersMovies.style.opacity = '1'
+}
 
-
+closeMenu.addEventListener('click', closeNav)
 
 
 
@@ -59,14 +71,4 @@ function toggleVideo() {
     iframe.currentTime = 0;
     iframe.pause();
 }
-
-
-
-const closePop = document.querySelector('.close__popup')
-
-closePop.addEventListener('click', () => {
-    trailer.style.display='none';
-})
-
-
 
