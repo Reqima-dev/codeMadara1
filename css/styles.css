@@ -2472,4 +2472,12 @@ footer p {
         height: 270vh;
     }
 
+    .container-films .entete-recherche {
+        height: 17vh;
+    }
+
+    .recent_movies_home {
+        margin-top: 13rem;
+    }
+
 }
