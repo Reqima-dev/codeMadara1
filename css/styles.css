@@ -1807,7 +1807,7 @@ footer p {
     }
 
     .recent_movies_home .recent_movies {
-        height: 225vh;
+        height: 413vh;
     }
 
     .recent_movies_home .plan-abonner {
@@ -1815,7 +1815,7 @@ footer p {
     }
 
     .plan-abonner .container-plan .plan-simple {
-        height: 62vh;
+        height: 119vh;
     }
 
     .recent_movies_home .plan-abonner {
@@ -1998,7 +1998,7 @@ footer p {
     }
 
     .recent_movies_home .plan-abonner {
-        height: 150vh;
+        height: 290vh;
     }
 
     .temoignes {
@@ -2092,7 +2092,7 @@ footer p {
     }
 
     .container-films .entete-recherche {
-        height: 10vh;
+        height: 20vh;
     }
 }
 
@@ -2144,7 +2144,7 @@ footer p {
     }
 
     .plan-abonner .container-plan .plan-simple {
-        height: 62vh;
+        height: 115vh;
         width: 49vw;
     }
 
@@ -2153,7 +2153,7 @@ footer p {
     }
 
     .recent_movies_home .plan-abonner {
-        height: 215vh;
+        height: 400vh;
         width: 97vw;
     }
 
@@ -2182,11 +2182,7 @@ footer p {
 
     .recent_movies_home .plan-abonner {
         margin-left: 0;
-        margin-top: -214px;
-    }
-
-    .container-films .entete-recherche {
-        height: 10vh;
+        margin-top: -180px;
     }
 
     .container-films .entete-recherche input {
@@ -2197,10 +2193,15 @@ footer p {
 }
 
 
-@media screen and (max-width: 676px) {
+@media screen and (max-width: 744px) {
 
     .container-left {
-        margin-left: -55px;
+        margin-left: -83px;
+    }
+
+    .recent_movies_home .plan-abonner {
+        margin-left: 0;
+        margin-top: -300px;
     }
 
     .madara_info .md-services {
@@ -2220,7 +2221,7 @@ footer p {
     }
 
     .madara_info .special__promo .promo_corver img:hover {
-        width: 35rem;
+        width: 24rem;
     }
 
     .madara_info .tarifsStandars {
@@ -2253,7 +2254,7 @@ footer p {
     }
 
     .recent_movies_home .plan-abonner {
-        height: 225vh;
+        height: 429vh
     }
 
     .contact {
@@ -2281,11 +2282,20 @@ footer p {
     }
 
     .madara_info .md-services {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         place-items: center;
-        gap: 2rem;
+        align-items: center;
     }
 
+    .madara_info .md-services .services img {
+        width: 7rem;
+    }
+    .madara_info .md-services .services p {
+       
+        font-size: 12px;
+        font-weight: 600;
+        color: white;
+    }
     .container-left {
         margin-left: -96px;
     }
@@ -2333,12 +2343,12 @@ footer p {
     }
 
     .madara_info .tarifsStandars .tarifs {
-        margin-right: 70px;
+        margin-right: 31px;
     }
 
 
     .recent_movies_home .plan-abonner {
-        margin-top: -38px;
+        margin-top: -550px;
     }
 
     .madara_info .mode_painement {
@@ -2357,7 +2367,7 @@ footer p {
 
     .plan-abonner .container-plan .plan-simple {
         width: 84vw;
-        height: 80vh;
+        height: 127vh;
     }
 
     .plan-abonner .plan-simple .mode-conditions {
@@ -2382,7 +2392,7 @@ footer p {
     }
 
     .recent_movies_home .plan-abonner {
-        height: 288vh;
+        height: 465vh;
     }
 
     .temoignes {
@@ -2406,7 +2416,7 @@ footer p {
 
     .footer-logo p {
         font-size: 12px;
-        width: 226px;
+        width: 307px;
         margin-right: 0;
     }
 
@@ -2418,7 +2428,7 @@ footer p {
         place-items: center;
     }
 
-    
+
 
     footer {
         padding-left: 3rem;
@@ -2429,12 +2439,12 @@ footer p {
     }
 
     .container-movies aside .top {
-        left: 112px;
-        top: -102px;
+        left: 138px;
+        top: -109px;
     }
 
     .container-films .entete-recherche {
-        height: 12vh;
+        height: 21vh;
         width: 105vw;
     }
 
@@ -2442,7 +2452,7 @@ footer p {
         font-size: 2.5rem;
     }
 
-    .container_home .drag_menu{
+    .container_home .drag_menu {
         top: 38px;
     }
 
@@ -2456,6 +2466,15 @@ footer p {
     .madara_info .container-left .info h1 {
         font-size: 3rem;
     }
+
+    .madara_info .md-services{
+        grid-template-columns: 1fr;
+    }
+
+    .recent_movies_home .plan-abonner {
+        margin-top: -100px;
+    }
+
     .container-left {
         margin-left: -122px;
     }
@@ -2466,10 +2485,11 @@ footer p {
 
     .plan-abonner .container-plan .plan-simple {
         width: 84vw;
-        height: 75vh;
+        height: 142vh;
     }
+
     .recent_movies_home .plan-abonner {
-        height: 270vh;
+        height: 515vh;
     }
 
     .container-films .entete-recherche {
@@ -2478,6 +2498,13 @@ footer p {
 
     .recent_movies_home {
         margin-top: 13rem;
+    }
+
+    .footer-logo p {
+        font-size: 12px;
+        width: 238px;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
 }
